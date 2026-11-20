@@ -45,7 +45,7 @@ which stays private.
 ## Issues and corrections
 
 Something wrong, unclear or out of date? Open an issue:
-<https://github.com/foojisheep/app-docs/issues>
+<https://github.com/foooverse/app-docs/issues>
 
 That tracker is also where bug reports for the apps themselves go.
 

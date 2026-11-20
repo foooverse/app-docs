@@ -29,123 +29,171 @@
   .contact-box a { color: var(--accent); font-weight: 600; text-decoration: none; }
   footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 20px; font-size: 14px; color: var(--muted); }
   footer a { color: var(--accent); }
+  .note { font-size: 13.5px; color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 14px 0 18px; }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { padding: 8px 10px 10px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+  .shots figcaption strong { color: var(--ink); }
 </style>
 </head>
 <body>
   <div class="wrap">
     <nav class="crumb"><a href="index.html">Foooverse / LaluanLive Docs</a></nav>
     <h1>Support</h1>
-    <p class="updated">Need help with LaluanLive? Start here, or reach us directly at <a href="mailto:support@foooverse.com">support@foooverse.com</a>.</p>
+    <p class="updated">For LaluanLive v0.3 · Last updated: November 21, 2026</p>
+    <p>Need help with LaluanLive? Start here, or reach us directly at <a href="mailto:support@foooverse.com">support@foooverse.com</a>.</p>
 
-    <div class="faq-item">
-      <h3>Is LaluanLive an official RapidKL app?</h3>
-      <p>No. LaluanLive is an independent, community project. It combines official RapidKL notices with reports from riders to give a fuller picture of what's happening on a line, but it isn't affiliated with RapidKL. For time-critical decisions, always check official announcements and station staff.</p>
-    </div>
+    <h2>The basics</h2>
 
-    <div class="faq-item">
-      <h3>Do I need to create an account?</h3>
-      <p>No. You can view line statuses and submit reports without signing up. Your device gets an anonymous ID automatically, used only to apply fair limits like reporting caps — it isn't linked to your name or other personal details.</p>
-    </div>
+    <h3>Is LaluanLive an official Rapid KL app?</h3>
+    <p>No. LaluanLive is an independent, community project. It combines official Rapid KL notices, MET Malaysia weather data and reports from riders to give a fuller picture of what's happening on a line, but it isn't affiliated with Rapid KL, Prasarana or MET Malaysia. For time-critical decisions, always check official announcements and station staff.</p>
 
-    <div class="faq-item">
-      <h3>Do I have to attach a photo to submit a report?</h3>
-      <p>No — photos and notes aren't collected anymore. Just pick the problem, optionally choose the station, and send it. Older reports that already had a photo or a note still show it.</p>
-    </div>
+    <h3>Do I need to create an account?</h3>
+    <p>No. You can view lines, report problems and get alerts without signing up. Your device gets an anonymous ID automatically, used only to count each device once and to apply fair limits like reporting caps. It isn't linked to your name or other personal details.</p>
 
-    <div class="faq-item">
-      <h3>How long is my report kept?</h3>
-      <p>Reports and the incident they belong to are deleted 48 hours after the issue is marked resolved. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
-    </div>
+    <h3>How do I choose "my lines"?</h3>
+    <p>The first time you open the app, the board asks <strong>Which lines do you ride?</strong> Tap the lines you use, then <strong>Done</strong>. To change them later, open the menu and tap lines under <strong>Your lines</strong>, or tap the star on a line's page. Followed lines come first on the board and are saved on your phone only.</p>
 
-    <div class="faq-item">
-      <h3>What does the "Agree" button do?</h3>
-      <p>Tapping Agree lets you confirm a rider report matches what you're seeing too. It's a "me too" signal shown as a count on the report — it doesn't change the line's status by itself, and you can withdraw it any time. You can't agree with your own report, or with one that's already resolved.</p>
-    </div>
+    <h3>The status used to say "Halted". What's "Stopped"?</h3>
+    <p>It's the same status with a plainer name: no trains on part of the line, because Rapid KL says service is suspended or several riders report a breakdown.</p>
 
-    <div class="faq-item">
-      <h3>What does "Running fine" do?</h3>
-      <p>Tapping it on a line's page tells other riders things seem normal right now. It needs no note and doesn't show up in the feed. When three different riders tap it, an open rider report on that line closes. You can use it once per line per hour.</p>
-    </div>
+    <h3>Why did the app turn dark (or light) by itself?</h3>
+    <p>LaluanLive follows the time of day in Kuala Lumpur: light by day, warm light around sunrise and sunset, and dark at night. There's no manual switch.</p>
 
-    <div class="faq-item">
-      <h3>Where do the official notices come from?</h3>
-      <p>From the service announcements RapidKL publishes on its website, which LaluanLive checks automatically every 10 minutes at peak times (5–10 am and 4–9 pm), every 30 minutes at other times and every 2 hours overnight. Each notice is shown with a short English title, such as "Train delay: Kelana Jaya Line · Gombak". A notice about several lines shows on each of them, and a named station is marked on the line's page; tap "View official notice" for RapidKL's full announcement in Malay and English. Notices can lag behind what's happening on the platform, so for time-critical decisions check RapidKL directly. When RapidKL announces service has been restored, the earlier open items for that line close. RapidKL's general updates also appear, titled "Update"; they're for information only and never change a line's status or send alerts.</p>
-    </div>
+    <h2>The map</h2>
 
-    <div class="faq-item">
-      <h3>What does "Last checked RapidKL … Updates may be delayed" mean?</h3>
-      <p>LaluanLive checks RapidKL's announcements every 10 minutes at peak times (5–10 am and 4–9 pm), every 30 minutes at other times and every 2 hours overnight. If two scheduled checks in a row don't go through, this message appears so that a quiet board isn't mistaken for "all lines running normally". It's on our side, not your phone or connection, and there's nothing you need to do. Rider reports keep working the whole time, and the message clears by itself on the next successful check. For anything urgent, check RapidKL directly.</p>
-    </div>
+    <h3>How do I move the map?</h3>
+    <p>On a phone, one finger scrolls the page as usual. Use <strong>two fingers</strong> to turn the map and pinch to zoom, or use the <strong>+</strong>, <strong>−</strong> and turn buttons. On a computer, drag to turn and tilt, and scroll to zoom. Hover over or tap a landmark or tall tower to see its name.</p>
 
-    <div class="faq-item">
-      <h3>How do I get alerts when my line has a problem?</h3>
-      <p>Open your line's page and tap the bell, then allow notifications. You'll get an alert when that line becomes delayed, disrupted or halted, and when it's back to normal, even when LaluanLive is closed. You can follow several lines. On iPhone or iPad, add LaluanLive to your Home Screen first (in Safari: Share, then Add to Home Screen), open it from there, then tap the bell. This needs iOS 16.4 or later.</p>
-    </div>
+    <h3>The map says "Loading map…" or appears bit by bit. Is something wrong?</h3>
+    <p>No. The 3D map is loaded separately so the line statuses show first. On a phone it then draws in stages: ground and tracks, then buildings, landmarks and trees, then clouds and rain. On a slow connection this can take a few seconds. Everything else on the board works while it loads.</p>
 
-    <div class="faq-item">
-      <h3>I turned on alerts but I'm not getting any. What should I check?</h3>
-      <ul>
-      <li><strong>Nothing has changed yet.</strong> Alerts only come when a line you follow changes status, which on a good day may be never. They can arrive up to about 5 minutes after the change.</li>
-      <li><strong>The bell is on.</strong> Open the line's page and check the bell is filled in.</li>
-      <li><strong>iPhone:</strong> you must use LaluanLive from your Home Screen, not a Safari tab, and be on iOS 16.4 or later. In Settings → Notifications → LaluanLive, make sure Allow Notifications is on.</li>
-      <li><strong>Focus or Do Not Disturb</strong> may be holding alerts back. They follow your phone's own settings.</li>
-      <li><strong>Android or a computer:</strong> check that notifications are allowed for the LaluanLive site in your browser's settings.</li>
-      <li><strong>If you blocked notifications earlier</strong>, allow them again in your phone or browser settings, then tap the bell once more. If you removed LaluanLive from your Home Screen, add it again and turn the bell back on.</li>
-      </ul>
-    </div>
+    <h3>The map is flat, not 3D. Why?</h3>
+    <p>If your browser or device can't draw 3D graphics, LaluanLive shows a flat version of the same map. It shows the same lines, pins and weather.</p>
 
-    <div class="faq-item">
-      <h3>How do I stop alerts?</h3>
-      <p>Tap the bell again on each line you follow. Once no line is followed, your alert subscription is deleted. You can also turn off notifications for LaluanLive in your phone's settings at any time.</p>
-    </div>
+    <h3>What do the numbers on the map mean?</h3>
+    <p>Each numbered pin matches a numbered chip under the map, for example "1 · KJ stopped at Dang Wangi" or "2 · Heavy rain · till 1 am". Tap a chip to open that line or the weather page. The map is a picture of the situation, not a navigation map, so positions are approximate.</p>
 
-    <div class="faq-item">
-      <h3>Why can't I see the "Running fine" button?</h3>
-      <p>It's shown on every line's page. Tapping it always registers as a confirmation, but it only has an effect on a line's open reports while that line is affected — on a line already running normally, there's nothing for it to help close.</p>
-    </div>
+    <h2>Rain and weather</h2>
 
-    <div class="faq-item">
-      <h3>Why don't I see the "Need another way?" section?</h3>
-      <p>It only appears while a line is delayed, disrupted or halted, so on a line running normally it's hidden. When it's shown, it lists live MRT feeder buses near the affected station (where there are any), RapidKL's alternative service details when they're available, a link to open Google Maps at that station, and a link to Grab's website to book a ride. Most RapidKL notices only reach LaluanLive as a short title, so alternative service details are often missing; tap "View official notice" for the full announcement. LaluanLive doesn't plan routes itself and doesn't know your location or destination.</p>
-    </div>
+    <h3>When does a station show ☂?</h3>
+    <p>Only when it's actually raining there now, as reported by riders: <strong>2 or more different riders</strong> tapped <strong>Raining here</strong> at that station or the next one on the same line, within 20 minutes of each other. It clears 30 minutes after the last report. Forecasts and official warnings never put a ☂ on a station, because they say rain is expected, not that it's raining.</p>
 
-    <div class="faq-item">
-      <h3>How does a rider report go away?</h3>
-      <p>It closes on its own once the line has been quiet for 30 minutes, or sooner when three different riders tap "Running fine" on that line. It also closes when RapidKL announces that service is back. Reports can't be flagged or removed by other riders, and reporting is never blocked for a device; the only limits are one report per line every 5 minutes and up to 6 an hour.</p>
-    </div>
+    <h3>It's raining at my station but there's no ☂. Why?</h3>
+    <p>No ☂ means no one has reported rain there yet, not that it's dry. Rain shows once two riders report it, so if you see rain, report it. Open the report sheet, pick the station and tap <strong>Raining here</strong>. Measured rain from JPS rain gauges may be added later, once JPS gives permission.</p>
 
-    <div class="faq-item">
-      <h3>Can I remove a report I submitted?</h3>
-      <p>Reports are cleaned up automatically per our retention schedule. If you need something removed sooner, contact us at <a href="mailto:support@foooverse.com">support@foooverse.com</a> with as much detail as possible (line, station, approximate time) and we'll assist.</p>
-    </div>
+    <h3>What's the difference between ☂ and a weather warning?</h3>
+    <ul>
+    <li><strong>☂ (raining now)</strong>: riders say it's raining at those stations right now.</li>
+    <li><strong>Weather warning</strong>: MET Malaysia expects heavy rain, thunderstorms or flooding in a district. It's shown as text (for example "Rain till 1 am"), as a card on affected lines and on the weather page, with a level: Yellow, Orange or Red.</li>
+    </ul>
+    <p>Neither one changes a line's status.</p>
 
-    <div class="faq-item">
-      <h3>I found a bug or something isn't working. What should I do?</h3>
-      <p>Please email us at <a href="mailto:support@foooverse.com">support@foooverse.com</a> with:</p>
-      <ul>
-      <li>A short description of what happened</li>
-      <li>What you expected to happen instead</li>
-      <li>The device/browser you were using, if known</li>
-      </ul>
-    </div>
+    <h3>What does the water on the weather page mean?</h3>
+    <p>The waterline shows the <strong>warning level</strong>: higher water means a more serious warning. It doesn't show flood depth. Lines with stations in the warning area sit below the waterline.</p>
 
-    <div class="faq-item">
-      <h3>How do I request my data be deleted?</h3>
-      <p>Since LaluanLive doesn't collect personal information or require an account, there is typically nothing tied to you personally to delete beyond your own reports, which are removed automatically per our retention policy. If you turned on alerts, turning off the bell on every line deletes your alert subscription. If you have a specific concern, email us and we'll help.</p>
-    </div>
+    <h3>Where does the weather information come from?</h3>
+    <p>From MET Malaysia (MetMalaysia), through the government's open data portal data.gov.my (CC BY 4.0). Warnings are checked about every 15 minutes, and about every 5 minutes while a warning is active. LaluanLive matches each warning's districts to the stations in them. The daily forecast paints the map's sky.</p>
 
-    <div class="faq-item">
-      <h3>Can I suggest a new feature or line to add?</h3>
-      <p>Yes — we welcome feedback. Send suggestions to <a href="mailto:support@foooverse.com">support@foooverse.com</a>.</p>
-    </div>
+    <h3>What does "Weather data delayed" mean?</h3>
+    <p>We haven't been able to get fresh weather data for a while. Rather than show "no warnings" (which might be wrong), the app says the data is delayed and hides the ☂ indicators. It's on our side, not your phone. Rail status keeps working, and the message clears by itself.</p>
 
-    <div class="contact-box">
-      For anything not covered above, reach out anytime.<br>
-      <a href="mailto:support@foooverse.com">support@foooverse.com</a>
-    </div>
+    <h3>The weather page says "Official warnings aren't connected yet". What does that mean?</h3>
+    <p>Only the MET Malaysia forecast is available at the moment, so the page shows the forecast for the Klang Valley without a warning level. Check MetMalaysia directly for official warnings.</p>
+
+    <h3>Is LaluanLive a flood warning service?</h3>
+    <p>No. Not an official warning service. Information may be delayed. Follow MetMalaysia, JPS/InfoBanjir and NADMA. In an emergency, call 999.</p>
+
+    <h2>Reports</h2>
+
+    <h3>How do I report a problem?</h3>
+    <p>Tap the round green Report button, then pick the line, optionally the station, and what you see: Delayed, Stopped, Crowded, Raining here, Wet / flooded exit, Aircond / lights or Something else. Then tap Send. There's nothing to type and no photo to add.</p>
+
+    <h3>What does "Near me" do? Do you track my location?</h3>
+    <p>No tracking. <strong>Near me</strong> asks your phone for your location once, finds the nearest station within 3 km on your phone, and fills it in. Only the station you send is shared, never your location. If you say no, or there's no station within 3 km, you just pick the station yourself.</p>
+
+    <h3>Why does "Raining here" ask for a station?</h3>
+    <p>Rain is shown per station, so a rain report needs to say where. Rain reports are deleted 24 hours after you send them.</p>
+
+    <h3>Do "Wet / flooded exit" and "Aircond / lights" change the line's status?</h3>
+    <p>No. They describe a station rather than the trains, so they show on that station for other riders but never make a line Delayed or Disrupted.</p>
+
+    <h3>What do "Same here" and "Agree" do?</h3>
+    <p>Both say "I'm seeing this too". <strong>Same here</strong> on a line's page agrees with the latest rider report (or, if there isn't one, opens the report sheet with the problem picked). <strong>Agree</strong> does the same on a specific report. The count shows other riders how many people noticed it. It doesn't change the status by itself, and you can withdraw it any time. You can't agree with your own report or one that's already resolved.</p>
+
+    <h3>What does "Running fine" do?</h3>
+    <p>Tapping it on a line's page tells other riders things seem normal right now. It doesn't show up in the feed. When three different riders tap it, an open rider report on that line closes, unless a Rapid KL notice is still open. You can use it once per line per hour.</p>
+
+    <h3>How does a rider report go away?</h3>
+    <p>It closes on its own once the line has been quiet for 30 minutes, or sooner when three different riders tap "Running fine" on that line. It also closes when Rapid KL announces that service is back. Reports can't be flagged or removed by other riders, and reporting is never blocked for a device. The only limits are one report per line every 5 minutes and up to 6 an hour.</p>
+
+    <h3>How long is my report kept?</h3>
+    <p>Reports are deleted 48 hours after the issue is resolved. "Raining here" reports are deleted 24 hours after they're sent. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+
+    <h3>Can I remove a report I submitted?</h3>
+    <p>Reports are cleaned up automatically. If you need something removed sooner, email <a href="mailto:support@foooverse.com">support@foooverse.com</a> with the line, station and approximate time, and we'll help.</p>
+
+    <h2>Official notices</h2>
+
+    <h3>Where do the official notices come from?</h3>
+    <p>From the service announcements Rapid KL publishes on its website, which LaluanLive checks every 10 minutes at peak times (5–10 am and 4–9 pm), every 30 minutes at other times and every 2 hours overnight. Each notice gets a short English title, such as "Train delay: Kelana Jaya Line · Gombak". Tap "View official notice" for Rapid KL's full announcement in Malay and English. Notices can lag behind what's happening on the platform. When Rapid KL announces service has been restored, the earlier open items for that line close. Rapid KL's general updates also appear, titled "Update". They're for information only and never change a line's status or send alerts.</p>
+
+    <h3>What does "Rapid KL notices delayed" mean?</h3>
+    <p>Two scheduled checks of Rapid KL's announcements in a row didn't go through. The board says so, so that a quiet board isn't mistaken for "all lines running normally". It's on our side, not your phone, and it clears by itself on the next successful check. Rider reports keep working the whole time.</p>
+
+    <h2>Getting around a problem</h2>
+
+    <h3>Where's "Need another way?"</h3>
+    <p>It's now its own page, <strong>Other ways to go</strong>. Open it from a line's page while the line has a problem, or from the action button on the board (for example "Try Kajang from Pasar Seni →"). It lists other lines from the nearest interchanges (best first), feeder buses near the station, Google Maps links, a link to book a ride on Grab's website, and Rapid KL's alternative service when a notice includes one. Suggestions come from the line map and live status, not from Rapid KL, so check signs at the station.</p>
+
+    <h2>Alerts</h2>
+
+    <h3>How do I get alerts when my line has a problem?</h3>
+    <p>Open <strong>Alerts</strong> from the menu and turn on your lines, or tap the bell on a line's page. Allow notifications when asked. You'll get an alert when the line becomes delayed, disrupted or stopped, and when it's back to normal, even when LaluanLive is closed. On iPhone or iPad, add LaluanLive to your Home Screen first (in Safari: Share, then Add to Home Screen) and open it from there. This needs iOS 16.4 or later.</p>
+
+    <h3>How do weather &amp; flood alerts work?</h3>
+    <p>In <strong>Alerts</strong>, turn on <strong>Weather &amp; flood</strong>. You'll get one alert per MET Malaysia warning that covers a station on a line you get alerts for, or any of up to 20 stations you pin with <strong>+ Pin station</strong>. An update to the same warning replaces the earlier notification. Rider rain reports don't send alerts.</p>
+
+    <h3>What are quiet hours?</h3>
+    <p><strong>Quiet hours · 11 pm – 6 am</strong> is on by default for weather alerts. Yellow and orange warnings that start overnight wait until 6 am, and are only sent then if the warning is still running. Red warnings always come through. Line alerts aren't affected by quiet hours, but they follow your phone's own Focus and Do Not Disturb settings.</p>
+
+    <h3>I turned on alerts but I'm not getting any. What should I check?</h3>
+    <ul>
+    <li><strong>Nothing has changed yet.</strong> Line alerts only come when a line you follow changes status, and weather alerts only when MET Malaysia issues a warning for your stations. On a good day that may be never. Alerts can arrive up to about 5 minutes after the change.</li>
+    <li><strong>The switch is on.</strong> Open Alerts and check the line (or Weather &amp; flood) is switched on.</li>
+    <li><strong>Quiet hours.</strong> Yellow and orange weather warnings wait until 6 am.</li>
+    <li><strong>iPhone:</strong> use LaluanLive from your Home Screen, not a Safari tab, on iOS 16.4 or later. In Settings → Notifications → LaluanLive, make sure Allow Notifications is on.</li>
+    <li><strong>Focus or Do Not Disturb</strong> may be holding alerts back.</li>
+    <li><strong>Android or a computer:</strong> check that notifications are allowed for the LaluanLive site in your browser's settings.</li>
+    <li>If you blocked notifications earlier, allow them again in your phone or browser settings, then turn the alert on again. If you removed LaluanLive from your Home Screen, add it again and turn your alerts back on.</li>
+    </ul>
+
+    <h3>How do I stop alerts?</h3>
+    <p>In <strong>Alerts</strong>, switch off each line and Weather &amp; flood. Once nothing is on, your alert subscription is deleted. You can also turn off notifications for LaluanLive in your phone's settings at any time.</p>
+
+    <h2>Your data</h2>
+
+    <h3>How do I request my data be deleted?</h3>
+    <p>LaluanLive doesn't collect personal information or require an account, so there's usually nothing tied to you personally beyond your own reports, which are deleted automatically. Turning off all your alerts deletes your alert subscription and pinned stations from our servers. Your followed lines and settings on your phone are removed when you clear the site's data in your browser. If you have a specific concern, email us and we'll help.</p>
+
+    <h2>Other</h2>
+
+    <h3>I found a bug or something isn't working. What should I do?</h3>
+    <p>Please email <a href="mailto:support@foooverse.com">support@foooverse.com</a> with:</p>
+    <ul>
+    <li>A short description of what happened</li>
+    <li>What you expected to happen instead</li>
+    <li>The device and browser you were using, if known</li>
+    </ul>
+
+    <h3>Can I suggest a new feature or line?</h3>
+    <p>Yes, we welcome feedback. Send suggestions to <a href="mailto:support@foooverse.com">support@foooverse.com</a>.</p>
+
+    <div class="callout">For anything not covered above, reach out anytime: <a href="mailto:support@foooverse.com">support@foooverse.com</a></div>
 
     <footer>
-      <a href="index.html">← Back to Documentation Home</a>
+      <a href="index.html">← Back to Documentation Home</a> · <a href="mailto:support@foooverse.com">support@foooverse.com</a>
     </footer>
   </div>
 </body>

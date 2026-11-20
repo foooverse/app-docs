@@ -27,71 +27,85 @@
   }
   footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 20px; font-size: 14px; color: var(--muted); }
   footer a { color: var(--accent); }
+  .note { font-size: 13.5px; color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 14px 0 18px; }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { padding: 8px 10px 10px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+  .shots figcaption strong { color: var(--ink); }
 </style>
 </head>
 <body>
   <div class="wrap">
     <nav class="crumb"><a href="index.html">Foooverse / LaluanLive Docs</a></nav>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 9, 2026</p>
+    <p class="updated">Last updated: November 21, 2026</p>
 
     <p><strong>LaluanLive</strong> (the "App") is operated by Foooverse ("we", "us", "our"). This policy explains what information we collect when you use the App, how we use it, and how long we keep it.</p>
 
     <h2>1. Information We Collect</h2>
     <p><strong>We do not require an account, sign-up, or personal details to use the App.</strong> The information we handle falls into these categories:</p>
     <ul>
-      <li><strong>Anonymous device identifier.</strong> When you first open the App, a random identifier is generated and stored on your device. This identifier is not linked to your name, phone number, email, or any other personal detail. It exists solely to tell reports, agreements and "Running fine" confirmations from different devices apart, and to apply fair limits (see Section 4).</li>
-      <li><strong>Reports you submit.</strong> When you report an issue on a line or station, we collect the line, the optional station, and the issue type you choose. Notes and photos are no longer collected for new reports; older reports that already had one still display it.</li>
-      <li><strong>Agreements.</strong> If you tap "Agree" on a report, we record which device agreed, so each device can only agree once per report and can withdraw it later.</li>
-      <li><strong>Alert subscriptions.</strong> If you turn on alerts for a line (the bell), your browser gives us a push address and encryption keys, which are needed to deliver notifications to it, and we store them together with the list of lines you follow. This is not linked to your device identifier, your reports, or any personal detail. Nothing is collected unless you turn alerts on and allow notifications.</li>
-      <li><strong>Basic usage data.</strong> Like most apps, our hosting and analytics providers may automatically log standard technical information (such as approximate region, browser/device type, and timestamps of requests) for security and performance purposes. We do not use this to identify you personally.</li>
-      <li><strong>View counts.</strong> We show a rough count of people currently using the app as a whole. This count uses a temporary, random identifier for your browser tab — not your device identifier, and not linked to any of your reports.</li>
+      <li><strong>Anonymous device identifier.</strong> When you first open the App, a random identifier is generated and stored on your device (in a cookie and in local storage). It is not linked to your name, phone number, email, or any other personal detail. It exists only to tell reports, agreements, "Running fine" confirmations and line views from different devices apart, so each device counts once, and to apply fair limits (see Section 4).</li>
+      <li><strong>Reports you submit.</strong> When you report something, we collect the line, the station (optional, except for "Raining here"), the type you choose (Delayed, Stopped, Crowded, Raining here, Wet / flooded exit, Aircond / lights, or Something else), the time, and your device identifier. Reports contain no free text and no photos.</li>
+      <li><strong>Agreements and confirmations.</strong> If you tap "Agree" or "Same here" on a report, or "Running fine" on a line, we record which device did it, so each device counts once and can withdraw an agreement later.</li>
+      <li><strong>Line views.</strong> When you open a line's page, we add one to that line's view total, at most once per device per 30 minutes. To do this we briefly note that your device viewed the line.</li>
+      <li><strong>Alert subscriptions.</strong> If you turn on alerts, your browser gives us a push address and encryption keys, which are needed to deliver notifications. We store them with your alert choices: the lines you get alerts for and, if you turn on weather &amp; flood alerts, that setting, up to 20 stations you pin, and whether quiet hours are on. We also record which weather warnings we've already sent to that subscription, so you never get the same one twice. None of this is linked to your device identifier, your reports, or any personal detail. Nothing is collected unless you turn alerts on and allow notifications.</li>
+      <li><strong>Basic usage data.</strong> Like most apps, our hosting providers may automatically log standard technical information (such as approximate region, browser or device type, and timestamps of requests) for security and performance purposes. We do not use this to identify you personally.</li>
+      <li><strong>"People using the app now" count.</strong> We show a rough count of people currently using the App. This uses a temporary, random identifier for your browser tab, not your device identifier, and is not linked to your reports.</li>
     </ul>
 
-    <h2>2. What We Do Not Collect</h2>
-    <p>We do not ask for or knowingly collect your name, email address, phone number, exact location history, or any government-issued identification. We do not require you to create an account to view line statuses, submit reports, or get alerts.</p>
+    <h2>2. Information Kept Only on Your Device</h2>
+    <p>Some settings are saved in your browser's local storage and stay on your device: the lines you follow (and whether you've answered "Which lines do you ride?"), the lines you get alerts for, and your weather &amp; flood alert settings. Alert choices are also sent to us when you turn alerts on, as described in Section 1, so we can deliver them. You can remove what's stored on your device by clearing LaluanLive's site data in your browser.</p>
 
-    <h2>3. How Long We Keep Your Data</h2>
+    <h2>3. Location</h2>
+    <p>LaluanLive does not track your location. The only feature that uses it is <strong>Near me</strong> on the report screen, and only when you tap it. Your phone then asks for your permission. If you allow it, your location is used <strong>on your device only</strong> to find the nearest station within 3 km and fill it in. Your location is never sent to us or stored by us. Only the station you choose to report is sent, as part of the report. If you decline, nothing changes and you pick the station yourself.</p>
+
+    <h2>4. What We Do Not Collect</h2>
+    <p>We do not ask for or knowingly collect your name, email address, phone number, location or location history, contacts, photos, or any government-issued identification. We do not require an account to view line statuses or weather, submit reports, or get alerts.</p>
+
+    <h2>5. How Long We Keep Your Data</h2>
     <ul>
-      <li>Reports (and any older report's photo or note) are kept only for as long as the related issue is active, and for <strong>48 hours after it is marked resolved</strong>. After that, the report and its agreements are permanently deleted.</li>
-      <li>Alert subscriptions are kept while you follow at least one line. They are deleted when you turn off alerts for every line, or automatically when your browser's push service tells us the subscription no longer exists (for example after you remove the App from your Home Screen or block its notifications).</li>
-      <li>Aggregated, anonymous statistics (for example, how often a line experiences disruptions) may be retained indefinitely. These summaries contain no photos, notes, or device identifiers — only counts and dates.</li>
+      <li><strong>Reports</strong> are kept while the related issue is active, and for <strong>48 hours after it is marked resolved</strong>. After that, the report and its agreements are permanently deleted.</li>
+      <li><strong>"Raining here" reports</strong> are deleted <strong>24 hours after they're sent</strong>, whatever their status.</li>
+      <li><strong>"Running fine" confirmations</strong> are deleted after 6 hours.</li>
+      <li><strong>Line view records</strong> (which device viewed which line) are deleted after 24 hours. Only the total count per line is kept.</li>
+      <li><strong>Alert subscriptions</strong>, including weather alert settings and pinned stations, are kept while at least one alert is on. They're deleted when you turn off every alert, or automatically when your browser's push service tells us the subscription no longer exists (for example after you remove the App from your Home Screen or block its notifications). The record of which weather warnings were sent to you is deleted with the subscription, or 7 days after the warning ends, whichever comes first.</li>
+      <li><strong>Aggregated, anonymous statistics</strong> (for example, how often a line has disruptions, or total views per line) may be retained indefinitely. They contain no device identifiers, only counts and dates.</li>
+      <li><strong>Photos and notes</strong> that riders could attach to reports before October 2026 have been permanently deleted. The App no longer collects either.</li>
     </ul>
 
-    <h2>4. How We Use Information</h2>
+    <h2>6. How We Use Information</h2>
     <p>We use the information described above only to:</p>
     <ul>
-      <li>Show accurate, up-to-date line and station statuses to all users.</li>
-      <li>Let riders submit and view reports.</li>
-      <li>Send alerts about the lines you chose to follow, and nothing else. We do not send marketing or promotional notifications.</li>
+      <li>Show accurate, up-to-date line, station and rain information to all users.</li>
+      <li>Let riders submit and view reports, and count each device once.</li>
+      <li>Send the alerts you chose (line changes, and weather &amp; flood warnings for your lines and pinned stations), and nothing else. We do not send marketing or promotional notifications.</li>
       <li>Apply fair, consistent limits on how often a device can report.</li>
       <li>Maintain the security and reliability of the App.</li>
     </ul>
-    <p>We do not sell your information. We do not use your reports for advertising or profiling.</p>
+    <p>We do not sell your information. We do not use it for advertising or profiling.</p>
 
-    <h2>5. Sharing of Information</h2>
+    <h2>7. Sharing of Information</h2>
     <ul>
-      <li><strong>Other users of the App</strong> can see the reports you submit (the issue type, line and station) — never any personal identity, since none is collected.</li>
-      <li><strong>Service providers</strong> who host the App and provide infrastructure may process this information strictly on our behalf and under confidentiality obligations, solely to operate the App.</li>
+      <li><strong>Other users of the App</strong> can see the reports you submit (the type, line, station and time), and counts of how many riders agreed or said it's raining. Never any personal identity, since none is collected.</li>
+      <li><strong>Service providers</strong> who host the App and its database may process this information strictly on our behalf and under confidentiality obligations, solely to operate the App.</li>
       <li><strong>Push notification services.</strong> Alerts are delivered through the push service your browser uses (Apple for iPhone and Safari, Google for Chrome and Android, Mozilla for Firefox, Microsoft for Edge on Windows). The alert's content is encrypted on its way to your device, and these services handle delivery under their own privacy policies.</li>
-      <li><strong>Links to other services.</strong> If you tap Open in Google Maps, Search a ride, or a share option (WhatsApp, X, Threads), you leave LaluanLive. The Google Maps link passes along the affected station's location, never yours; the ride link opens Grab's website without passing anything; and for sharing we pass the report text you chose to share. Those services handle that information under their own privacy policies.</li>
+      <li><strong>Data sources.</strong> We fetch Rapid KL's public announcements and MET Malaysia's weather forecasts and warnings (through data.gov.my) from our own servers. Nothing about you is sent to them.</li>
+      <li><strong>Links to other services.</strong> If you tap Open in Google Maps, Book a ride, View official notice or a MetMalaysia link, you leave LaluanLive. Google Maps links pass along a station's location (the affected station or an interchange), never yours. The ride link opens Grab's website without passing anything. Those services handle your visit under their own privacy policies.</li>
       <li><strong>Legal requirements.</strong> We may disclose information if required to do so by law or in response to valid legal process.</li>
     </ul>
 
-    <h2>6. Photos and Notes on Older Reports</h2>
-    <p>Reports no longer include a photo or note option. Some older reports submitted before this change still display one; those remain visible to other riders viewing that line until the report is deleted per Section 3. If an older photo or note concerns you, contact us and we will remove it.</p>
-
-    <h2>7. Children's Privacy</h2>
+    <h2>8. Children's Privacy</h2>
     <p>The App is not directed at children, and we do not knowingly collect information from children. If you believe a child has submitted content to the App, please contact us using the details below and we will remove it.</p>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>9. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above. Continued use of the App after changes take effect constitutes acceptance of the updated policy.</p>
+    <p class="note"><strong>Changes on November 21, 2026:</strong> added weather &amp; flood alerts (pinned stations, quiet hours), the optional Near me location feature, "Raining here" reports and their 24-hour retention, line view and confirmation retention, and settings kept on your device. Removed sharing to WhatsApp, X and Threads (no longer in the App) and the section on photos and notes, which have been deleted.</p>
 
-    <h2>9. Contact Us</h2>
+    <h2>10. Contact Us</h2>
     <p>If you have questions about this Privacy Policy or wish to request removal of content, please contact us at:</p>
-    <div class="contact-box">
-      <a href="mailto:support@foooverse.com"><strong>support@foooverse.com</strong></a>
-    </div>
+    <p><a href="mailto:support@foooverse.com">support@foooverse.com</a></p>
 
     <footer>
       <a href="index.html">← Back to Documentation Home</a>

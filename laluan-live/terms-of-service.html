@@ -27,80 +27,86 @@
   }
   footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 20px; font-size: 14px; color: var(--muted); }
   footer a { color: var(--accent); }
+  .note { font-size: 13.5px; color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 14px 0 18px; }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { padding: 8px 10px 10px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+  .shots figcaption strong { color: var(--ink); }
 </style>
 </head>
 <body>
   <div class="wrap">
     <nav class="crumb"><a href="index.html">Foooverse / LaluanLive Docs</a></nav>
     <h1>Terms of Service</h1>
-    <p class="updated">Last updated: October 9, 2026</p>
+    <p class="updated">Last updated: November 21, 2026</p>
 
     <p>Welcome to <strong>LaluanLive</strong> (the "App"), operated by Foooverse ("we", "us", "our"). By accessing or using the App, you agree to these Terms of Service ("Terms"). If you do not agree, please do not use the App.</p>
 
     <h2>1. What LaluanLive Is</h2>
-    <p>LaluanLive is a community-driven tool that shows live status information for rail lines by combining official operator notices with reports submitted by riders. <strong>LaluanLive is an independent, community project and is not operated by, affiliated with, or endorsed by any rail operator.</strong> Line and station names are used for identification purposes only.</p>
+    <p>LaluanLive is a community-driven tool that shows live status information for Klang Valley rail lines. It combines official rail operator notices, weather forecasts and warnings published by MET Malaysia, and reports submitted by riders. LaluanLive is an independent project. It is not operated by, affiliated with, or endorsed by any rail operator, MET Malaysia, JPS or any government agency. Line, station and agency names are used for identification only.</p>
 
     <h2>2. Not an Official Source</h2>
-    <p>Information shown in the App — including line statuses, incident reports, and estimated repair or resume times — is provided for general awareness only and may be incomplete, delayed, or inaccurate. Official notices are relayed from the rail operator's public announcements and may lag behind, or leave out details of, the original. <strong>Always refer to official rail operator channels, station announcements, and staff for time-critical decisions</strong>, such as whether to catch a specific train or how to plan around a service disruption. We are not responsible for any loss, delay, missed connection, or damage arising from reliance on information shown in the App.</p>
-
-    <h2>3. User-Submitted Content</h2>
-    <p>When you submit a report — the issue type, the line and, optionally, the station ("User Content"; reports submitted before October 9, 2026 may also include a short note or a photo) — you confirm that:</p>
+    <p>Information shown in the App, including line statuses, incident reports, estimated repair or resume times, weather warnings, forecasts and rain indicators, is provided for general awareness only and may be incomplete, delayed or inaccurate. In particular:</p>
     <ul>
-      <li>The report is accurate to the best of your knowledge and relates to an actual, current situation on the line or station selected.</li>
-      <li>If an older report of yours includes a photo, you own it or otherwise have the right to share it.</li>
+      <li>Official notices are relayed from the rail operator's public announcements and may lag behind, or leave out details of, the original.</li>
+      <li>Rider reports, including "Raining here" reports and the rain indicators built from them, are unverified.</li>
+      <li>Suggestions for other ways to travel come from the line map and live status, not from the rail operator.</li>
+      <li>The map is an illustration of the network and the situation. It is not to scale, positions are approximate, and it must not be used for navigation.</li>
+    </ul>
+    <p>Always refer to official rail operator channels, station announcements and staff for time-critical decisions, such as whether to catch a specific train or how to plan around a disruption. We are not responsible for any loss, delay, missed connection or damage arising from reliance on information shown in the App.</p>
+
+    <h2>3. Weather and Flood Information</h2>
+    <p><strong>LaluanLive is not an official warning service.</strong> Weather information is based on forecasts and warnings published by MET Malaysia through data.gov.my, matched to stations by district. It may be delayed, incomplete or matched to stations inaccurately. A warning shown for a station is an area warning: it does not mean that the station, its exits or its surroundings are flooded, and it does not show flood depth. LaluanLive does not give emergency instructions. Follow MetMalaysia, JPS/InfoBanjir and NADMA, and in an emergency call 999.</p>
+
+    <h2>4. User-Submitted Content</h2>
+    <p>When you submit a report (the line, the report type and, where given, the station, together "User Content"), you confirm that:</p>
+    <ul>
+      <li>The report is accurate to the best of your knowledge and describes an actual, current situation at the line or station selected.</li>
       <li>The report does not violate these Terms or any applicable law.</li>
     </ul>
-    <p>By submitting User Content, you grant us a non-exclusive, worldwide, royalty-free license to display, distribute, and use that content within the App for the purpose of operating the service. You retain ownership of your content.</p>
+    <p>By submitting User Content, you grant us a non-exclusive, worldwide, royalty-free licence to display, distribute and use it within the App to operate the service, including combining it with other riders' reports (for example, to show where it is raining). You retain ownership of your content.</p>
 
-    <h2>4. Prohibited Content and Conduct</h2>
-    <p>You must not submit reports that:</p>
+    <h2>5. Prohibited Content and Conduct</h2>
+    <p>You must not:</p>
     <ul>
-      <li>Are unrelated to the line or station selected, or are otherwise false or misleading.</li>
-      <li>Are spam or repeated duplicate reports, or are made to manipulate a line's status.</li>
-      <li>On older reports that include a note or photo, contain sensitive, private, explicit, or otherwise inappropriate material, including identifiable faces, license plates, or other personal details of individuals without their consent, or harass, threaten, or target any individual or group.</li>
-      <li>Violate any applicable law.</li>
+      <li>Submit reports that are unrelated to the line or station selected, or are otherwise false or misleading, including reporting rain or a wet or flooded exit that you are not seeing.</li>
+      <li>Submit spam or repeated duplicate reports, or try to manipulate a line's status or the rain indicators.</li>
+      <li>Interfere with the App, its data sources or its infrastructure, or access it by automated means at a rate that degrades the service.</li>
+      <li>Use the App in violation of any applicable law.</li>
     </ul>
 
-    <h2>5. How Reports Close</h2>
-    <p>Rider reports are not moderated or flagged by other users. A report closes automatically once the line has seen no new activity for a set period, when enough different riders confirm the line is running fine, or when the rail operator announces that service is back. Closed reports are deleted as described in Section 7.</p>
+    <h2>6. How Reports Close</h2>
+    <p>Rider reports are not moderated or flagged by other users. A report closes automatically once the line has seen no new activity for a set period, when enough different riders confirm the line is running fine, or when the rail operator announces that service is back. Rain indicators clear automatically a short time after the last "Raining here" report. Closed reports are deleted as described in Section 8.</p>
 
-    <h2>6. Reporting Limits</h2>
-    <p>To keep the App fair and reliable, the number of reports a device can submit is limited (for example, one report per line within a few minutes, and a maximum per hour). These limits apply to every device equally and are tied only to an anonymous device identifier. Separately, we may restrict or remove access for abuse of the App as described in Section 11.</p>
+    <h2>7. Reporting Limits</h2>
+    <p>To keep the App fair and reliable, the number of reports a device can submit is limited (for example, one report per line within a few minutes, and a maximum per hour). These limits apply to every device equally and are tied only to an anonymous device identifier. Separately, we may restrict or remove access for abuse of the App as described in Section 14.</p>
 
-    <h2>7. Data Retention</h2>
-    <p>Reports (and any photo or note on an older report) are retained only while relevant and for a limited period after an issue is marked resolved, as described in our Privacy Policy. We reserve the right to remove any content at any time, for any reason, including but not limited to violations of these Terms.</p>
+    <h2>8. Data Retention</h2>
+    <p>Reports are retained only while relevant and for a limited period afterwards, and "Raining here" reports for a shorter period, as described in our <a href="privacy-policy.html">Privacy Policy</a>. We reserve the right to remove any content at any time, for any reason, including violations of these Terms.</p>
 
-    <h2>7a. Sharing to Other Platforms</h2>
-    <p>The App may let you share a report to WhatsApp, X, Threads, or directly to a rail operator's official feedback channel. Once you choose to share, <strong>the content leaves our systems and we no longer have any control over it.</strong> Specifically:</p>
-    <ul>
-      <li>If an older report's photo is sent as an actual file (for example, via WhatsApp), a real copy now exists on that platform or with that recipient, independent of the App. Its retention and further use are governed entirely by that platform's or recipient's own policies, not ours.</li>
-      <li>If content is shared as a link (for example, on X or Threads), any linked photo on an older report will stop working once it is deleted from our systems per Section 7 above, even though the shared post itself may remain public indefinitely on that platform until the poster removes it. New reports have no photo to link.</li>
-    </ul>
-    <p><strong>We take no responsibility for content once it has been shared outside the App</strong>, including but not limited to how it is stored, retained, further shared, or used by any third-party platform or recipient.</p>
+    <h2>9. Location</h2>
+    <p>The optional <strong>Near me</strong> feature asks your device for your location to suggest the nearest station. Your location is used on your device only and is not sent to us. Suggestions may be wrong; check the station before you send a report.</p>
 
-    <h2>7b. Third-Party Links and Services</h2>
-    <p>The App may link to services we don't operate, such as Google Maps, ride-hailing apps and the rail operator's own pages. Directions, ride availability and prices are provided by those third parties. We aren't affiliated with them, don't control or guarantee them, and your use of them is governed by their own terms and privacy policies. Station locations we pass to those services are provided for convenience and may be inaccurate.</p>
+    <h2>10. Third-Party Links and Services</h2>
+    <p>The App links to services we don't operate, such as Google Maps, ride-hailing services, the rail operator's own pages and MET Malaysia. Directions, ride availability and prices are provided by those third parties. We aren't affiliated with them, don't control or guarantee them, and your use of them is governed by their own terms and privacy policies. Station locations we pass to those services are provided for convenience and may be inaccurate.</p>
 
-    <h2>7c. Alerts</h2>
-    <p>If you turn on alerts for a line, notifications are sent on a best-effort basis and may arrive late, out of order, or not at all, for example because of your device's settings or the push service that delivers them. Alerts are not a substitute for official announcements (see Section 2).</p>
+    <h2>11. Alerts</h2>
+    <p>If you turn on line alerts or weather &amp; flood alerts, notifications are sent on a best-effort basis and may arrive late, out of order, or not at all, for example because of your device's settings, quiet hours, or the push service that delivers them. Alerts that can't be delivered within a short time are dropped. Alerts are not a substitute for official announcements or official weather warnings (see Sections 2 and 3).</p>
 
-    <h2>8. No Warranty</h2>
-    <p>The App is provided "as is" and "as available," without warranties of any kind, whether express or implied, including but not limited to accuracy, completeness, reliability, or fitness for a particular purpose.</p>
+    <h2>12. Data Credits</h2>
+    <p>Weather data: MET Malaysia via data.gov.my, used under CC BY 4.0. Station districts and rivers: © OpenStreetMap contributors, used under the Open Database License (ODbL). Track alignments and station locations: Prasarana's GTFS data via data.gov.my; data and information are subject to the Malaysian Government Open Data Terms of Use 1.0.</p>
 
-    <h2>9. Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, Foooverse and LaluanLive shall not be liable for any indirect, incidental, special, or consequential damages, or any loss of data, revenue, or opportunity, arising from your use of, or inability to use, the App.</p>
+    <h2>13. No Warranty and Limitation of Liability</h2>
+    <p>The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including accuracy, completeness, reliability, availability or fitness for a particular purpose. To the fullest extent permitted by law, Foooverse and LaluanLive shall not be liable for any indirect, incidental, special or consequential damages, or any loss of data, revenue or opportunity, arising from your use of, or inability to use, the App.</p>
 
-    <h2>10. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the App after changes take effect constitutes acceptance of the updated Terms. Material changes will be reflected by updating the "Last updated" date above.</p>
+    <h2>14. Changes and Termination</h2>
+    <p>We may update these Terms from time to time. Material changes will be reflected by updating the "Last updated" date above, and continued use of the App after changes take effect constitutes acceptance of the updated Terms. We may suspend or terminate access to the App, in whole or in part, at our discretion, including for violations of these Terms.</p>
+    <p class="note"><strong>Changes on November 21, 2026:</strong> added weather and flood information (Section 3), the map and rain indicators (Section 2), Near me (Section 9), weather alerts (Section 11) and data credits (Section 12). Removed the photo and note rules and the sharing section, as those features are no longer in the App.</p>
 
-    <h2>11. Termination</h2>
-    <p>We may suspend or terminate access to the App, in whole or in part, at our discretion, including for violations of these Terms.</p>
-
-    <h2>12. Contact Us</h2>
+    <h2>15. Contact Us</h2>
     <p>Questions about these Terms can be sent to:</p>
-    <div class="contact-box">
-      <a href="mailto:support@foooverse.com"><strong>support@foooverse.com</strong></a>
-    </div>
+    <p><a href="mailto:support@foooverse.com">support@foooverse.com</a></p>
 
     <footer>
       <a href="index.html">← Back to Documentation Home</a>
